@@ -14,7 +14,7 @@ export const NavBar = () => {
         const sessions = [
             {
                 key: 'home',
-                path: '/',
+                path: '/home',
                 active: true,
                 icon : (<IoHomeOutline />), 
             },

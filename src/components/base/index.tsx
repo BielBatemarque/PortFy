@@ -1,13 +1,11 @@
 import { Suspense } from "react";
-import { NavBar } from "../../components/navbar";
-import { MainContainer, MainContent, MainSection } from "../painel/base/styles";
-import Loader from "../../components/loader";
+import { MainContainer, MainContent, MainSection } from "../../pages/painel/base/styles";
+import Loader from "../loader/index";
 import { Outlet } from "react-router-dom";
 
-export default function PortifolioPage () {
+export default function BaseViewPortifolio () {
     return (
-        <>
-            <MainSection>
+         <MainSection>
             {/* Aqui pode vir um header */}
             <MainContent>
                 {/* Aqui pode vir uma sidebar */}
@@ -25,7 +23,5 @@ export default function PortifolioPage () {
                 </MainContainer>
             </MainContent>
         </MainSection>
-        <NavBar />
-        </>
     );
 }

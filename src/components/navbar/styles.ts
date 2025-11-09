@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 interface NavLinksPros {
     backGroud?: string;
     color?: string;
+    active?: boolean;
 }
 
 export const NavContainer = styled.nav`
@@ -22,8 +23,8 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavLink = styled(Link)<NavLinksPros>`
-    background: ${(props) => props.backGroud || "transparent"};
-    color: ${(props) => props.color || "rgba(255, 255, 255, 0.6)"};
+    background: ${(props) => props.active ?  "#4db5ff" : "transparent"};
+    color: ${(props) => props.active ? "#1f1f38" :  "rgba(255, 255, 255, 0.6)"};
     padding: 0.8rem;
     border-radius: 50%;
     display: flex;

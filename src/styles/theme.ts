@@ -1,8 +1,8 @@
 export const theme = {
   colors: {
     primary: "#007bff",
-    background: "#f9f9f9",
-    text: "#333333",
+    background: "#6e6e6eff",
+    text: "#bebebeff",
   },
   font: {
     family: "'Inter', sans-serif",

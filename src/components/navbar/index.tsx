@@ -1,57 +1,51 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { NavContainer, NavLink } from "./styles";
 import { FaRegAddressBook } from "react-icons/fa6";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { GrCloudComputer } from "react-icons/gr";
 import { IoMdCode } from "react-icons/io";
 import { MdWorkOutline } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { MdOutlineContactPage } from "react-icons/md";
 
-
 export const NavBar = () => {
+    const [activeMenu, setActiveMenu] = useState("home");
+
     const sessionsMenu = useMemo(() => {
         const sessions = [
             {
                 key: 'home',
                 path: '/home',
-                active: true,
                 icon : (<IoHomeOutline />), 
             },
             {
                 key: 'infoMe',
                 path: '/me',
-                active: false,
                 icon: (<FaRegAddressBook />),
             },
             {
                 key: 'skills',
                 path: '/skills',
-                active: false,
                 icon: (<GrCloudComputer />),
             },
             {
                 key: 'code',
                 path: '/code',
-                active: false,
                 icon: (<IoMdCode />),
             },
             {
-                key: 'code',
-                path: '/qualify',
-                active: false,
+                key: 'career',
+                path: '/career',
                 icon: (<MdWorkOutline />),
             },
             {
-                key: 'code',
+                key: 'projects',
                 path: '/projects',
-                active: false,
                 icon: (<GrProjects />),
             },
             {
-                key: 'code',
+                key: 'contact',
                 path: '/contact',
-                active: false,
                 icon: (<MdOutlineContactPage />),
             }
         ];
@@ -63,7 +57,7 @@ export const NavBar = () => {
     return (
         <NavContainer>
             {sessionsMenu.map((menu) => (
-                <NavLink to={menu?.path} active={menu?.active}>
+                <NavLink to={menu?.path} active={menu?.key == activeMenu} onClick={() => setActiveMenu(menu?.key)}>
                     {menu?.icon}
                 </NavLink>
             ))}

@@ -1,9 +1,23 @@
+import { BrowserRouter } from "react-router-dom"
+import { ToastContainer } from "react-toastify"
+import { AppRoutes } from "./routes"
+
 function App() {
 
   return (
-    <>
-      <h1>Novo Portifólio =)</h1>
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        closeButton={false}
+        pauseOnHover
+        theme="colored"
+      />
+    </BrowserRouter>
   )
 }
 

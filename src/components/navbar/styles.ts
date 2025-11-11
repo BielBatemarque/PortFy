@@ -23,7 +23,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavLink = styled(Link)<NavLinksPros>`
-    background: ${(props) => props.active ?  "#4db5ff" : "transparent"};
+    background: ${(props) => props.active ?  "#3acf7dff" : "transparent"};
     color: ${(props) => props.active ? "#1f1f38" :  "rgba(255, 255, 255, 0.6)"};
     padding: 0.8rem;
     border-radius: 50%;

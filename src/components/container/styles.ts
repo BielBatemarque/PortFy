@@ -1,0 +1,72 @@
+import styled from "styled-components";
+import type { ReactNode } from 'react';
+
+interface StyledContainerProps {
+    children?: ReactNode;
+    backgroundColor?: string;
+    width?: string;
+    height?:string;
+    display:string;
+    gridTemplateColumns:string;
+    direction:string;
+    gap?:string;
+    wrap:string;
+    border:string;
+    borderTop:string;
+    borderBottom:string;
+    borderRight:string;
+    borderLeft:string;
+    padding?:string;
+    paddingLeft:string;
+    margin?:string;
+    marginLeft:string;
+    alignItems:string;
+    justifyContent:string;
+    overflowY:string;
+    overflowX:string;
+    overflow:string;
+    cursor?:string;
+    radius:string;
+    flex:string;
+    minHeigth:string;
+    maxWidth:string;
+    maxHeight:string;
+    flexFlow:string;
+    minWidth:string;
+    boxShadow:string;
+}
+
+export const StyledContainer = styled.div<StyledContainerProps>`
+  background-color: ${(props) => props.backgroundColor || "unset"};
+  width: ${(props) => props.width || "100%"};
+  height: ${(props) => props.height || "unset"};
+  display: ${(props) => props.display || "flex"};
+  grid-template-columns: ${(props) => props.gridTemplateColumns || "1fr"};
+  flex-direction: ${(props) => props.direction || "column"};
+  gap: ${(props) => props.gap || "5px"};
+  flex-wrap: ${(props) => props.wrap || "wrap"};
+  border: ${(props) => props.border || "unset"};
+  border-top: ${(props) => props.borderTop || "unset"};
+  border-bottom: ${(props) =>
+    (props.borderBottom && "1px solid #e1e1e1") || "unset"};
+  border-right: ${(props) => props.borderRight || "unset"};
+  border-left: ${(props) => props.borderLeft || "unset"};
+  padding: ${(props) => props.padding || "unset"};
+  padding-left: ${(props) => props.paddingLeft || ""};
+  margin: ${(props) => props.margin || "unset"};
+  margin-left: ${(props) => props.marginLeft || ""};
+  align-items: ${(props) => props.alignItems || "unset"};
+  justify-content: ${(props) => props.justifyContent || "unset"};
+  overflow-y: ${(props) => props.overflowY || "unset"};
+  overflow-x: ${(props) => props.overflowX || "unset"};
+  overflow: ${(props) => props.overflow || "unset"};
+  cursor: ${(props) => props.cursor || "unset"};
+  border-radius: ${(props) => props.radius || "unset"};
+  min-height: ${(props) => props.minHeigth || "unset"};
+  flex: ${(props) => props.flex || "unset"};
+  max-width: ${(props) => props.maxWidth || "unset"};
+  max-height: ${(props) => props.maxHeight || "unset"};
+  flex-flow: ${(props) => props.flexFlow};
+  min-width: ${(props) => props.minWidth || "unset"};
+  box-shadow: ${(props) => props.boxShadow || "unset"};
+`;

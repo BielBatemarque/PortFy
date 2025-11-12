@@ -1,7 +1,9 @@
+import { Container } from "../../../components/container";
+
 export const HomePage = () => {
-    return (
-        <>
-            <h1>Home do Portifólio</h1>
-        </>
+    return (        
+        <Container>
+            <p>opaopaopa</p>
+        </Container>
     );
 }

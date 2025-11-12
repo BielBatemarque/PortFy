@@ -17,6 +17,7 @@ export const MainContent = styled.div`
 
 export const MainContainer = styled.div`
   width: 100%;
+  padding: 10rem;
   height: calc(100vh - 71px);
   overflow: auto;
 

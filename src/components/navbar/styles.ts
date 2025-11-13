@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import { theme } from '../../styles/theme';
 
 interface NavLinksPros {
     backGroud?: string;
@@ -23,7 +24,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavLink = styled(Link)<NavLinksPros>`
-    background: ${(props) => props.active ?  "#3acf7dff" : "transparent"};
+    background: ${(props) => props.active ?  theme.colors.primary : "transparent"};
     color: ${(props) => props.active ? "#1f1f38" :  "rgba(255, 255, 255, 0.6)"};
     padding: 0.8rem;
     border-radius: 50%;

@@ -2,7 +2,7 @@ import { ActionButton } from "../../../components/actionButton";
 import { Container } from "../../../components/container";
 import { Text } from "../../../components/text";
 import { Title } from "../../../components/title";
-import { HomeImg, SocialMediaContainer } from "./styles";
+import { HomeImg, SocialMediaContainer, SubTitle } from "./styles";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -36,15 +36,18 @@ export const HomePage = () => {
 
     return (        
         <Container direction="row">
-            <Container width="49%" alignItems="center" padding="10px">
-                <Title>Gabriel <br /> Batemarque</Title>
-                <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad aliquam nisi similique odit placeat facere quos minus architecto nostrum tempore deserunt, dolores excepturi fuga. Sit asperiores nam quis distinctio!</Text>
-                <Container direction="row">
-                        <ActionButton>bora bill</ActionButton>
-                        <ActionButton>bora fio bill</ActionButton>
-                </Container>                
+            <Container width="65%"  alignItems="center" padding="10px" gap="8rem">
+                <Container padding="20px 50px 50px 150px">
+                    <Title>Gabriel Batemarque</Title>
+                    <SubTitle>Software Developer</SubTitle>
+                    <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad aliquam nisi similique odit placeat facere quos minus architecto nostrum tempore deserunt, dolores excepturi fuga. Sit asperiores nam quis distinctio!</Text>
+                    <Container direction="row">
+                            <ActionButton>bora bill</ActionButton>
+                            <ActionButton>bora fio bill</ActionButton>
+                    </Container>                
+                </Container>
             </Container>
-            <Container width="49%" alignItems="center" padding="10px" gap="8rem">
+            <Container width="34%" alignItems="center" padding="10px" gap="8rem">
                 <HomeImg src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?fm=jpg&q=60&w=3000" />
 
                 <SocialMediaContainer>

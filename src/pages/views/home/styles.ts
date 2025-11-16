@@ -55,3 +55,21 @@ export const HomeImg = styled.div<HomeImgProps>`
     height: 180px;
   }
 `;
+
+export const SubTitle = styled.h3`
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-left: 5.4rem;
+    position: relative;
+
+  &::before{
+    background-color: hsl(0, 0%,46%);
+    content: "";
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    top: 1rem;
+    width: 70px;
+  }
+`;

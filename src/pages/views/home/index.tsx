@@ -41,9 +41,9 @@ export const HomePage = () => {
                     <Title>Gabriel Batemarque</Title>
                     <SubTitle>Software Developer</SubTitle>
                     <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad aliquam nisi similique odit placeat facere quos minus architecto nostrum tempore deserunt, dolores excepturi fuga. Sit asperiores nam quis distinctio!</Text>
-                    <Container direction="row">
-                            <ActionButton>bora bill</ActionButton>
-                            <ActionButton>bora fio bill</ActionButton>
+                    <Container direction="row" gap="15px" justifyContent="start" marginTop="1rem">
+                        <ActionButton primary={true}>bora bill</ActionButton>
+                        <ActionButton>bora fio bill</ActionButton>
                     </Container>                
                 </Container>
             </Container>

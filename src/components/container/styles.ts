@@ -34,6 +34,7 @@ interface StyledContainerProps {
     flexFlow?:string;
     minWidth?:string;
     boxShadow?:string;
+    marginTop?:string;
 }
 
 export const StyledContainer = styled.div<StyledContainerProps>`
@@ -55,6 +56,7 @@ export const StyledContainer = styled.div<StyledContainerProps>`
   padding-left: ${(props) => props.paddingLeft || ""};
   margin: ${(props) => props.margin || "unset"};
   margin-left: ${(props) => props.marginLeft || ""};
+  margin-top: ${(props) => props.marginTop || ""};
   align-items: ${(props) => props.alignItems || "unset"};
   justify-content: ${(props) => props.justifyContent || "unset"};
   overflow-y: ${(props) => props.overflowY || "unset"};

@@ -9,7 +9,7 @@ interface NavLinksPros {
 }
 
 export const NavContainer = styled.nav`
-    background: rgba(0, 0, 0, 0.3);
+    background: #000;
     width: max-content;
     padding: 0.7rem 1.7rem;
     z-index: 2;
@@ -32,7 +32,7 @@ export const NavLink = styled(Link)<NavLinksPros>`
     font-size: 1.1rem;
 
     &:hover {
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(192, 192, 192, 0.06);
     }
 `;
 

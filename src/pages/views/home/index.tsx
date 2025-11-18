@@ -15,22 +15,22 @@ export const HomePage = () => {
         {
             id: 0,
             name: 'Instagram',
-            icon: <FaInstagramSquare />
+            icon: <FaInstagramSquare size={25}/>
         },
         {
             id: 0,
             name: 'Facebook',
-            icon: <FaFacebook />
+            icon: <FaFacebook size={25}/>
         },
                 {
             id: 0,
             name: 'Linkedin',
-            icon: <FaLinkedin />
+            icon: <FaLinkedin size={25} />
         },
                 {
             id: 0,
             name: 'GitHub',
-            icon: <FaGithub />
+            icon: <FaGithub size={25} />
         },
     ]
 
@@ -40,10 +40,10 @@ export const HomePage = () => {
                 <Container padding="20px 50px 50px 150px">
                     <Title>Gabriel Batemarque</Title>
                     <SubTitle>Software Developer</SubTitle>
-                    <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad aliquam nisi similique odit placeat facere quos minus architecto nostrum tempore deserunt, dolores excepturi fuga. Sit asperiores nam quis distinctio!</Text>
+                    <Text>Olá, sou Gabriel, formado em Análise e Desenvolvimento de Sistemas pelo IFSC – Campus Gaspar. Atuo como desenvolvedor Web Full-Stack, com foco em React, Node.Js e Python.</Text>
                     <Container direction="row" gap="15px" justifyContent="start" marginTop="1rem">
-                        <ActionButton primary={true}>bora bill</ActionButton>
-                        <ActionButton>bora fio bill</ActionButton>
+                        <ActionButton primary={true}>Baixar CV</ActionButton>
+                        <ActionButton>Fale Comigo!</ActionButton>
                     </Container>                
                 </Container>
             </Container>

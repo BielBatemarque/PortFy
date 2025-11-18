@@ -3,7 +3,9 @@ import styled, { keyframes } from "styled-components";
 
 export const SocialMediaContainer = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
+    
 `;
 
 const profileAnimate = keyframes`

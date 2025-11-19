@@ -16,9 +16,10 @@ export const MainContent = styled.div`
 `;
 
 export const MainContainer = styled.div`
-  width: 100%;
+  width: 80%;
   padding: 5rem;
   height: calc(100vh - 71px);
+  margin: 0 auto;
   overflow: auto;
 
   @media print {

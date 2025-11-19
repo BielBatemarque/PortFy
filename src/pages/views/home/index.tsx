@@ -36,8 +36,8 @@ export const HomePage = () => {
 
     return (        
         <Container direction="row">
-            <Container width="65%"  alignItems="center" padding="10px" gap="8rem">
-                <Container padding="20px 50px 50px 150px">
+            <Container width="65%"  alignItems="center" padding="30px" gap="8rem">
+                <Container padding="120px 150px 150px 150px">
                     <Title>Gabriel Batemarque</Title>
                     <SubTitle>Software Developer</SubTitle>
                     <Text>Olá, sou Gabriel, formado em Análise e Desenvolvimento de Sistemas pelo IFSC – Campus Gaspar. Atuo como desenvolvedor Web Full-Stack, com foco em React, Node.Js e Python.</Text>
@@ -47,7 +47,7 @@ export const HomePage = () => {
                     </Container>                
                 </Container>
             </Container>
-            <Container width="34%" alignItems="center" padding="10px" gap="8rem">
+            <Container width="34%" alignItems="center" padding="10px" gap="10rem">
                 <HomeImg src="https://media.licdn.com/dms/image/v2/D4D03AQE2jexvCib8fg/profile-displayphoto-crop_800_800/B4DZnQSQTPHsAI-/0/1760136072142?e=1764806400&v=beta&t=9X7PREZhunKL6Yx6yKnuXpG6NSzjXDsHD6LQy-MfgH4" />
 
                 <SocialMediaContainer>

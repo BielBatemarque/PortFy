@@ -48,7 +48,7 @@ export const HomePage = () => {
                 </Container>
             </Container>
             <Container width="34%" alignItems="center" padding="10px" gap="10rem">
-                <HomeImg src="https://media.licdn.com/dms/image/v2/D4D03AQE2jexvCib8fg/profile-displayphoto-crop_800_800/B4DZnQSQTPHsAI-/0/1760136072142?e=1764806400&v=beta&t=9X7PREZhunKL6Yx6yKnuXpG6NSzjXDsHD6LQy-MfgH4" />
+                <HomeImg src="https://pbs.twimg.com/profile_images/983018479644303361/UD5uocVf_400x400.jpg" />
 
                 <SocialMediaContainer>
                     {socialMedias?.map(socialMedia => (socialMedia?.icon))}

@@ -32,29 +32,24 @@ export const HomeImg = styled.div<HomeImgProps>`
 
   width: 300px;
   height: 300px;
-  /* order: 1; */
-  justify-self: center;
+  max-width: 100%;
 
   box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
   animation: ${profileAnimate} 8s ease-in-out infinite 1s;
 
-  @media screen and (max-width: 992px) {
+  @media (max-width: 992px) {
     width: 250px;
     height: 250px;
-    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
   }
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 200px;
     height: 200px;
-    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
-    order: initial;
-    justify-self: initial;
   }
 
-  @media screen and (max-width: 350px) {
-    width: 180px;
-    height: 180px;
+  @media (max-width: 350px) {
+    width: 160px;
+    height: 160px;
   }
 `;
 
@@ -73,5 +68,32 @@ export const SubTitle = styled.h3`
     position: absolute;
     top: 1rem;
     width: 70px;
+  }
+`;
+
+export const HomeSection = styled.section`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
   }
 `;

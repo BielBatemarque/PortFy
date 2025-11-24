@@ -1,59 +1,51 @@
+import { HomeSection } from "./styles";
+import { SubTitle, HomeImg, SocialMediaContainer } from "./styles";
 import { ActionButton } from "../../../components/actionButton";
-import { Container } from "../../../components/container";
-import { Text } from "../../../components/text";
 import { Title } from "../../../components/title";
-import { HomeImg, SocialMediaContainer, SubTitle } from "./styles";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
+import { Text } from "../../../components/text";
+import { FaInstagramSquare, FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export const HomePage = () => {
 
     const socialMedias = [
-        {
-            id: 0,
-            name: 'Instagram',
-            icon: <FaInstagramSquare size={25}/>
-        },
-        {
-            id: 0,
-            name: 'Facebook',
-            icon: <FaFacebook size={25}/>
-        },
-                {
-            id: 0,
-            name: 'Linkedin',
-            icon: <FaLinkedin size={25} />
-        },
-                {
-            id: 0,
-            name: 'GitHub',
-            icon: <FaGithub size={25} />
-        },
-    ]
+        { id: 1, icon: <FaInstagramSquare size={25} /> },
+        { id: 2, icon: <FaFacebook size={25} /> },
+        { id: 3, icon: <FaLinkedin size={25} /> },
+        { id: 4, icon: <FaGithub size={25} /> },
+    ];
 
-    return (        
-        <Container direction="row">
-            <Container width="65%"  alignItems="center" padding="30px" gap="8rem">
-                <Container padding="120px 150px 150px 150px">
+    return (
+        <HomeSection id="home">
+            <div className="container">
+
+                {/* Coluna esquerda */}
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem" }}>
                     <Title>Gabriel Batemarque</Title>
-                    <SubTitle>Software Developer</SubTitle>
-                    <Text>Olá, sou Gabriel, formado em Análise e Desenvolvimento de Sistemas pelo IFSC – Campus Gaspar. Atuo como desenvolvedor Web Full-Stack, com foco em React, Node.Js e Python.</Text>
-                    <Container direction="row" gap="15px" justifyContent="start" marginTop="1rem">
-                        <ActionButton primary={true}>Baixar CV</ActionButton>
-                        <ActionButton>Fale Comigo!</ActionButton>
-                    </Container>                
-                </Container>
-            </Container>
-            <Container width="34%" alignItems="center" padding="10px" gap="10rem">
-                <HomeImg src="https://pbs.twimg.com/profile_images/983018479644303361/UD5uocVf_400x400.jpg" />
 
-                <SocialMediaContainer>
-                    {socialMedias?.map(socialMedia => (socialMedia?.icon))}
-                </SocialMediaContainer>
-            </Container>
-        </Container>
+                    <SubTitle>Software Developer</SubTitle>
+
+                    <Text>
+                        Olá, sou Gabriel, formado em Análise e Desenvolvimento de Sistemas 
+                        pelo IFSC – Campus Gaspar. Atuo como desenvolvedor Web Full-Stack, 
+                        com foco em React, Node.Js e Python.
+                    </Text>
+
+                    <div style={{ display: "flex", gap: "15px", marginTop: "1rem" }}>
+                        <ActionButton primary>Baixar CV</ActionButton>
+                        <ActionButton>Fale Comigo!</ActionButton>
+                    </div>
+                </div>
+
+                {/* Coluna direita */}
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem" }}>
+                    <HomeImg src="https://pbs.twimg.com/profile_images/983018479644303361/UD5uocVf_400x400.jpg" />
+
+                    <SocialMediaContainer>
+                        {socialMedias.map(item => item.icon)}
+                    </SocialMediaContainer>
+                </div>
+
+            </div>
+        </HomeSection>
     );
-}
+};

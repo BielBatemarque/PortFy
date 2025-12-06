@@ -16,37 +16,37 @@ export const NavBar = () => {
             {
                 key: 'home',
                 path: '/home',
-                icon : (<IoHomeOutline />), 
+                icon : IoHomeOutline, 
             },
             {
                 key: 'infoMe',
                 path: '/me',
-                icon: (<FaRegAddressBook />),
+                icon: FaRegAddressBook,
             },
             {
                 key: 'skills',
                 path: '/skills',
-                icon: (<GrCloudComputer />),
+                icon: GrCloudComputer,
             },
             {
                 key: 'code',
                 path: '/code',
-                icon: (<IoMdCode />),
+                icon: IoMdCode ,
             },
             {
                 key: 'career',
                 path: '/career',
-                icon: (<MdWorkOutline />),
+                icon: MdWorkOutline,
             },
             {
                 key: 'projects',
                 path: '/projects',
-                icon: (<GrProjects />),
+                icon: GrProjects,
             },
             {
                 key: 'contact',
                 path: '/contact',
-                icon: (<MdOutlineContactPage />),
+                icon: MdOutlineContactPage,
             }
         ];
 
@@ -56,9 +56,14 @@ export const NavBar = () => {
 
     return (
         <NavContainer>
-            {sessionsMenu.map((menu) => (
-                <NavLink to={menu?.path} active={menu?.key == activeMenu} onClick={() => setActiveMenu(menu?.key)}>
-                    {menu?.icon}
+            {sessionsMenu.map(({ key, path, icon: Icon }) => (
+                <NavLink
+                    key={key}
+                    to={path}
+                    active={key === activeMenu}
+                    onClick={() => setActiveMenu(key)}
+                >
+                    <Icon />
                 </NavLink>
             ))}
         </NavContainer>

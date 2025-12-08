@@ -34,7 +34,6 @@ export const NavLink = styled(Link)<NavLinksPros>`
     svg {
         color: ${({ active }) => (active ? "#000" : "rgba(255, 255, 255, 0.6)")};
         transition: 0.2s ease;
-        font-size: 1.4rem;
     }
 
     &:hover {
